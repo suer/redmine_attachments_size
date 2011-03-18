@@ -1,0 +1,23 @@
+<h1>Attachments Size</h1>
+
+Total Size: <%= number_to_human_size @total_size %>
+
+<div class="autoscroll">
+<table class="list">
+  <thead><tr>
+	<th><%=l(:label_project)%></th>
+	<th>file size</th>
+  </tr>
+  </thead>
+  <tbody>
+<% project_tree(@projects) do |project, level| %>
+  <tr class="<%= cycle("odd", "even") %> <%= project.css_classes %> <%= level > 0 ? "idnt idnt-#{level}" : nil %>">
+	<td align="center" class="name"><span><%= link_to_project(project, {:action => 'settings'}, :title => project.short_description) %></span></td>
+	<td align="center"><%= number_to_human_size @size_by_projects[project] %></td>
+   </tr>
+<% end %>
+  </tbody>
+</table>
+</div>
+
+<% html_title(l(:label_project_plural)) -%>

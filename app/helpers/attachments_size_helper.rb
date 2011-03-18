@@ -1,0 +1,2 @@
+module AttachmentsSizeHelper
+end
