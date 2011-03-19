@@ -1,12 +1,12 @@
-<h1>Attachments Size</h1>
+<h1><%= l(:attachment_size_title) %></h1>
 
-Total Size: <%= number_to_human_size @total_size %>
+<%= l(:attachment_size_total_size) %>: <%= number_to_human_size @total_size %>
 
 <div class="autoscroll">
 <table class="list">
   <thead><tr>
 	<th><%=l(:label_project)%></th>
-	<th>file size</th>
+	<th><%=l(:attachment_size_total_size) %></th>
   </tr>
   </thead>
   <tbody>

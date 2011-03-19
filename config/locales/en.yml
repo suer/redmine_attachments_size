@@ -1,3 +1,4 @@
-# English strings go here for Rails i18n
 en:
-  my_label: "My label"
+  attachment_size_all_projects_total_size: Sum of Attachment Size for all Projects 
+  attachment_size_title: Attachments Size
+  attachment_size_total_size: Total Size
