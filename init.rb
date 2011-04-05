@@ -1,5 +1,7 @@
 require 'redmine'
 
+require_dependency 'attachments_size/hooks'
+
 Redmine::Plugin.register :redmine_attachments_size do
   name 'Redmine Attachments Size plugin'
   author '@suer'
