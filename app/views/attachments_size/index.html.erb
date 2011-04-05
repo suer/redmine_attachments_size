@@ -18,7 +18,7 @@
     <% @attachment_container_types.each do |type| %>
       <td align="center"><%= number_to_human_size(@size_by_projects[project.id][type]) if @size_by_projects[project.id] %></td>
     <% end %>
-    <td align="center"><%= number_to_human_size(@size_by_projects[project.id][:total]) %></td>
+    <td align="center"><%= number_to_human_size(@size_by_projects[project.id][:total]) if @size_by_projects[project.id] %></td>
   </tr>
 <% end %>
   </tbody>
