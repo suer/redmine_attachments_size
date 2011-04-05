@@ -1,2 +1,0 @@
-= Redmine Disk Usage Plugin
-
