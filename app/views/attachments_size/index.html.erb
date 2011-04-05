@@ -1,20 +1,25 @@
 <h1><%= l(:attachment_size_title) %></h1>
 
 <%= l(:attachment_size_total_size) %>: <%= number_to_human_size @total_size %>
-
 <div class="autoscroll">
 <table class="list">
   <thead><tr>
 	<th><%=l(:label_project)%></th>
-	<th><%=l(:attachment_size_total_size) %></th>
+    <% @attachment_container_types.each do |type| %>
+      <th><%= type %></th>
+    <% end %>
+    <th><%=l(:attachment_size_total_size) %></th>
   </tr>
   </thead>
   <tbody>
 <% project_tree(@projects) do |project, level| %>
   <tr class="<%= cycle("odd", "even") %> <%= project.css_classes %> <%= level > 0 ? "idnt idnt-#{level}" : nil %>">
 	<td align="left" class="name"><span><%= link_to_project(project, {:action => 'settings'}, :title => project.short_description) %></span></td>
-	<td align="center"><%= number_to_human_size @size_by_projects[project] %></td>
-   </tr>
+    <% @attachment_container_types.each do |type| %>
+      <td align="center"><%= number_to_human_size @size_by_projects[project.id][type] %></td>
+    <% end %>
+    <td align="center"><%= number_to_human_size(@size_by_projects[project.id][:total]) %></td>
+  </tr>
 <% end %>
   </tbody>
 </table>
