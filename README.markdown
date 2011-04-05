@@ -1,7 +1,7 @@
 Redmine Attachments Size Plugin
 ==============================
 
-A Redmine plugin to see s attachments sizes.
+A Redmine plugin to see attachments sizes.
 
 Authors
 -----------------------------
