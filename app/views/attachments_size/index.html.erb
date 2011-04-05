@@ -16,7 +16,7 @@
   <tr class="<%= cycle("odd", "even") %> <%= project.css_classes %> <%= level > 0 ? "idnt idnt-#{level}" : nil %>">
 	<td align="left" class="name"><span><%= link_to_project(project, {:action => 'settings'}, :title => project.short_description) %></span></td>
     <% @attachment_container_types.each do |type| %>
-      <td align="center"><%= number_to_human_size @size_by_projects[project.id][type] %></td>
+      <td align="center"><%= number_to_human_size(@size_by_projects[project.id][type]) if @size_by_projects[project.id] %></td>
     <% end %>
     <td align="center"><%= number_to_human_size(@size_by_projects[project.id][:total]) %></td>
   </tr>
