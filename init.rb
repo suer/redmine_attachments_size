@@ -6,7 +6,7 @@ Redmine::Plugin.register :redmine_attachments_size do
   name 'Redmine Attachments Size plugin'
   author '@suer'
   description 'Display atachments size plugin'
-  version '0.0.3'
+  version '0.0.4'
   url 'https://github.com/suer/redmine_attachments_size'
   author_url 'http://d.hatena.ne.jp/suer'
 
