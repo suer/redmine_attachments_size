@@ -4,7 +4,7 @@ require_dependency 'attachments_size/hooks'
 
 Redmine::Plugin.register :redmine_attachments_size do
   name 'Redmine Attachments Size plugin'
-  author '@suer'
+  author 'suer'
   description 'Display atachments size plugin'
   version '0.0.5'
   url 'https://github.com/suer/redmine_attachments_size'
