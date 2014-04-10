@@ -1,6 +1,8 @@
 Redmine Attachments Size Plugin
 ==============================
 
+[![Code Climate](https://codeclimate.com/github/suer/redmine_attachments_size.png)](https://codeclimate.com/github/suer/redmine_attachments_size)
+
 A Redmine plugin to see attachments sizes.
 
 Authors
