@@ -25,3 +25,7 @@ Thanks
 ----------------------------
  * icons: [mini icons - famfamfam.com](http://www.famfamfam.com/lab/icons/mini/)
 
+License
+----------------------------
+[The MIT License (MIT)](http://opensource.org/licenses/mit-license)
+Copyright (c) 2014 suer
