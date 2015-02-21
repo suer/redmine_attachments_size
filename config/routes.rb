@@ -1,1 +1,1 @@
-match 'attachments_size/:action', :controller => 'attachments_size'
+get 'attachments_size/:action', :controller => 'attachments_size'

@@ -6,7 +6,7 @@ class AttachmentsSizeController < ApplicationController
     @projects = Project.all
     @size_by_projects = {}
     @attachment_container_types = []
-    Attachment.find(:all).each do |attachment|
+    Attachment.all.each do |attachment|
       case(attachment.container_type)
       when 'Project'
         @size_by_projects[attachment.container_id] ||= {}
