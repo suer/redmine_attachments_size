@@ -28,4 +28,4 @@ Thanks
 License
 ----------------------------
 [The MIT License (MIT)](http://opensource.org/licenses/mit-license)
-Copyright (c) 2014 suer
+Copyright (c) 2015 suer
