@@ -10,5 +10,5 @@ Redmine::Plugin.register :redmine_attachments_size do
   url 'https://github.com/suer/redmine_attachments_size'
   author_url 'http://d.hatena.ne.jp/suer'
 
-  menu :admin_menu, :attachments_size, {:controller => 'attachments_size'}, :caption => :attachment_size_title
+  menu :admin_menu, :attachments_size, {:controller => 'attachments_size'}, :caption => :attachment_size_title, :html => {:class => 'icon icon-attachment-size'}
 end
