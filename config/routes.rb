@@ -1,1 +1,1 @@
-get 'attachments_size/:action', :controller => 'attachments_size'
+get 'attachments_size/index', controller: 'attachments_size', action: 'index'
