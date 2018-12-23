@@ -14,7 +14,7 @@ Authors
 Requirements
 ----------------------------
 
-* Redmine 3.0.0
+* Redmine 4.0.0 or later
 
 Repository
 ----------------------------
